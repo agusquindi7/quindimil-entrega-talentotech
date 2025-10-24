@@ -11,20 +11,27 @@
   padding: 2vw;
   border: 4px solid black;
   display: flex;
-  flex-direction: row; /*esto es de izq a der*/
+  flex-wrap: nowrap; /* que no bajen de línea */
+  flex-direction: row;
+  overflow: hidden; /* 🔥 recorta lo que se sale del div */
+  justify-content: space-evenly;
 }
 
 .navbar-v1 button {
-  margin: 0 1em;
-  padding: 0.5em 1em;
-  height: 2em;
-  font-size: 1em;
+  margin: 0 0.5em; /* menos margen horizontal para pantallas chicas */
+  padding: 0.5em 1em; /* padding relativo al tamaño de fuente */
+  min-width: 6em; /* ancho mínimo para no quedar demasiado chico */
+  max-width: 12em; /* ancho máximo para que no se desborde */
+  height: 2.5em;
+  width: auto;
+  font-size: 1em; /* relativo al contenedor */
   border: none;
   border-radius: 4px;
   background-color: black;
   box-shadow: 3px 2px 2px grey;
   color: cornsilk;
   cursor: pointer;
+  white-space: nowrap; /* evita que el texto se rompa en varias líneas */
 }
 
 .navbar-v1 button {

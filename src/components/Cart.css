@@ -1,0 +1,89 @@
+.cart {
+  background-color: cornsilk;
+  width: 90%;
+  justify-self: center;
+  margin-top: 1em;
+  border-radius: 6px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2vw;
+  border: 4px solid black;
+}
+
+.remove {
+  margin: 0.5em 0.5em;
+  padding: 0; /* vamos a usar solo width/height para centrar */
+  width: 64px; /* ancho fijo */
+  height: 64px; /* alto fijo */
+  font-size: 16px; /* tamaño de la cruz */
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  box-shadow: 3px 2px 2px grey;
+  color: cornsilk;
+  cursor: pointer;
+
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+}
+
+.clear {
+  margin: 0 0.5em; /* menos margen horizontal para pantallas chicas */
+  padding: 0.5em 1em; /* padding relativo al tamaño de fuente */
+  min-width: 6em; /* ancho mínimo para no quedar demasiado chico */
+  max-width: 12em; /* ancho máximo para que no se desborde */
+  height: 2.5em;
+  width: em;
+  font-size: 1em; /* relativo al contenedor */
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  box-shadow: 3px 2px 2px grey;
+  color: cornsilk;
+  cursor: pointer;
+  white-space: nowrap; /* evita que el texto se rompa en varias líneas */
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  background-color: cornsilk;
+  width: 90%;
+  justify-self: center;
+  margin-top: 1em;
+  border-radius: 6px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2vw;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cart li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart button {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cart button:hover {
+  transform: scale(1.25);
+}
+
+.cart button:active {
+  transform: scale(0.9);
+}

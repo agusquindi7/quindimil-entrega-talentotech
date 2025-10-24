@@ -1,0 +1,72 @@
+.product-card {
+  background-color: bisque;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  height: auto;
+  width: 30vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.product-card:hover {
+  transform: scale(1.01);
+}
+
+.product-card :active {
+  transform: scale(0.99);
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta lo que sobra */
+  border-radius: 6px; /* opcional */
+}
+
+.product-card h4 {
+  font-size: 3vh;
+  margin: 0.25rem;
+  text-align: left;
+}
+
+.product-card p {
+  font-size: 2vh;
+  text-align: left;
+  margin: 0.25rem;
+}
+
+.product-card button {
+  margin: 0.1em;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  height: 2em;
+  font-size: 2vh;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  box-shadow: 3px 2px 2px grey;
+  color: cornsilk;
+  cursor: pointer;
+}
+
+.product-card button {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.product-card button:hover {
+  transform: scale(1.05);
+}
+
+.product-card button:active {
+  transform: scale(0.9);
+}
