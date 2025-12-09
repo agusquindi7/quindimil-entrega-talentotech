@@ -1,3 +1,5 @@
+import cartIcon from "../assets/shopping-cart.png";
+
 import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 import "./CornsilkDiv.css";
@@ -29,7 +31,7 @@ export default function Header({ cartCount, isAuthenticated, onLogout }) {
           <Link to="/carrito" className="position-relative d-inline-block">
             <img
               className="shopping-cart"
-              src="public/shopping-cart.png"
+              src= {cartIcon}
               alt="shopping-cart"
               style={{ width: "32px", height: "auto", cursor: "pointer" }}
             />
