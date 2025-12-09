@@ -11,6 +11,11 @@
   border: 4px solid black;
 }
 
+.header-custom {
+  background-color: #d3ab7b; /* ejemplo: marrón oscuro */
+  color: white; /* texto en blanco para contraste */
+}
+
 .cornsilk-div h1 {
   margin: 0;
   padding: 0;
@@ -55,4 +60,17 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.shopping-cart {
+  width: 32px; /* tamaño fijo */
+  height: auto; /* mantiene proporción */
+}
+.shopping-cart:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.shopping-cart:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
 }

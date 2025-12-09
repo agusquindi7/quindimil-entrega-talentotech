@@ -46,3 +46,10 @@
 .navbar-v1 button:active {
   transform: scale(0.9);
 }
+
+.navbar-v1 button:focus {
+  background-color: bisque;
+  box-shadow: 3px 2px 2px grey;
+  color: black;
+  font-weight: bold;
+}
